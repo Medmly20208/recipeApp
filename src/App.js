@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import CuisinesWrapper from "./components/CuisinesWrapper";
+import "./App.css";
+import React from "react";
+import Main from "./components/Main";
+import { Link } from "react-router-dom";
+import Search from "./components/Search";
 
+export const customStyle =
+  "m-4 bg-bright-blue text-white p-4 w-fit rounded-3xl cursor-pointer hover:bg-medium-blue";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <React.Fragment>
+      <header>
+        <Link to="/">
+          <h1 className={customStyle}>BEST APP RECIPE</h1>
+        </Link>
       </header>
-    </div>
+      <CuisinesWrapper></CuisinesWrapper>
+      <Search></Search>
+      <Main></Main>
+    </React.Fragment>
   );
 }
 
