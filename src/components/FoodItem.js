@@ -6,7 +6,7 @@ const FoodItem = (props) => {
   const navigate = useNavigate();
   const handler = () => {
     navigate(
-      `/id=${props.id}&name=${props.title}&img=${encodeURIComponent(
+      `/recipeApp/id=${props.id}&name=${props.title}&img=${encodeURIComponent(
         props.image
       )}`,
       {
