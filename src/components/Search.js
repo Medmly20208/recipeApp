@@ -6,7 +6,7 @@ const Search = () => {
   const navigate = useNavigate();
   const handler = (event) => {
     event.preventDefault();
-    navigate(`recipeApp/search/${inptref.current.value}`);
+    navigate(`/recipeApp/search/${inptref.current.value}`);
   };
   return (
     <div className="flex flex-row justify-center align-center items-baseline mb-24">
