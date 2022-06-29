@@ -6,9 +6,10 @@ import LoadingSpinner from "./LoadingSpinner";
 
 const FoodDetails = () => {
   const l = useLocation().pathname;
-  const pathName = l.slice("/recipeApp".length, l.length);
+  const pathName = l.slice("/recipeApp/".length, l.length);
   const j = new URLSearchParams(pathName);
   const name = new URLSearchParams(pathName);
+  console.log(j.get("id"));
   const [FoodIngerdient, setFoodIngerdient] = useState([]);
   const [Loading, setisLoading] = useState(false);
   const [dipssummary, setdispsummary] = useState(false);
