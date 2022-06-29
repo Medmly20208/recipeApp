@@ -11,14 +11,14 @@ const SearchResults = () => {
     setloading(true);
 
     fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?query=${SearchFood[2]}&number=10&apiKey=7329e16a85554beaaeb064d598fff4ad`
+      `https://api.spoonacular.com/recipes/complexSearch?query=${SearchFood[3]}&number=10&apiKey=7329e16a85554beaaeb064d598fff4ad`
     )
       .then((res) => res.json())
       .then((finalresult) => {
         setresults(finalresult.results);
         setloading(false);
       });
-  }, [SearchFood[2]]);
+  }, [SearchFood[3]]);
 
   return (
     <div className="flex flex-row justify-center align-center flex-wrap gap-6">
