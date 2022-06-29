@@ -11,7 +11,7 @@ function App() {
   return (
     <React.Fragment>
       <header>
-        <Link to="/">
+        <Link to="/recipeApp">
           <h1 className={customStyle}>BEST APP RECIPE</h1>
         </Link>
       </header>

@@ -14,7 +14,7 @@ const Main = () => {
     <main className="m-4">
       <Routes>
         <Route
-          path="/"
+          path="/recipeApp"
           element={
             <React.Fragment>
               <Trending></Trending>
@@ -22,15 +22,21 @@ const Main = () => {
             </React.Fragment>
           }
         ></Route>
-        <Route path="/Vietnamese" element={<Vitenamese></Vitenamese>}></Route>
-        <Route path="/French" element={<French />}></Route>
-        <Route path="/Greek" element={<Greek />}></Route>
-        <Route path="/Thai" element={<Thai />}></Route>
         <Route
-          path="/search/:FoodName"
+          path="/recipeApp/Vietnamese"
+          element={<Vitenamese></Vitenamese>}
+        ></Route>
+        <Route path="/recipeApp/French" element={<French />}></Route>
+        <Route path="/recipeApp/Greek" element={<Greek />}></Route>
+        <Route path="/recipeApp/Thai" element={<Thai />}></Route>
+        <Route
+          path="/recipeApp/search/:FoodName"
           element={<SearchResults></SearchResults>}
         ></Route>
-        <Route path="/:FoodId" element={<FoodDetails></FoodDetails>}></Route>
+        <Route
+          path="/recipeApp/:FoodId"
+          element={<FoodDetails></FoodDetails>}
+        ></Route>
       </Routes>
     </main>
   );

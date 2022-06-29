@@ -7,11 +7,8 @@ import LoadingSpinner from "./LoadingSpinner";
 const FoodDetails = () => {
   const l = useLocation().pathname;
   const pathName = l.slice(1, l.length);
-  console.log("l", pathName);
   const j = new URLSearchParams(pathName);
-  console.log("id=", j.get("id"));
   const name = new URLSearchParams(pathName);
-  console.log("name=", j.get("name"));
   const [FoodIngerdient, setFoodIngerdient] = useState([]);
   const [Loading, setisLoading] = useState(false);
   const [dipssummary, setdispsummary] = useState(false);
@@ -28,7 +25,6 @@ const FoodDetails = () => {
         setisLoading(false);
       });
   }, []);
-  console.log(FoodIngerdient);
   const summaryHandler = () => {
     setdispsummary(true);
   };

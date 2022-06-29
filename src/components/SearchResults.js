@@ -7,7 +7,6 @@ const SearchResults = () => {
   const SearchFood = location.split("/");
   const [result, setresults] = useState([]);
   const [loading, setloading] = useState(false);
-  console.log("search", SearchFood);
   useEffect(() => {
     setloading(true);
 

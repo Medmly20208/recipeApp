@@ -13,12 +13,10 @@ const Thai = () => {
     )
       .then((res) => res.json())
       .then((finalresult) => {
-        console.log("finalresult ", finalresult);
         setFood(finalresult.recipes);
         setisLoading(false);
       });
   }, []);
-  console.log("Food", Food);
   return (
     <div className="flex flex-row justify-center align-center flex-wrap gap-6">
       {Loading == true ? (
