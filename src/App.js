@@ -10,14 +10,8 @@ export const customStyle =
 function App() {
   return (
     <React.Fragment>
-      <header>
-        <Link to="/recipeApp">
-          <h1 className={customStyle}>BEST APP RECIPE</h1>
-        </Link>
-      </header>
-      <CuisinesWrapper></CuisinesWrapper>
+      <div className="fixed top-0 left-0 w-screen h-screen bg-black opacity-70 z-[-1]"></div>
       <Search></Search>
-      <Main></Main>
     </React.Fragment>
   );
 }

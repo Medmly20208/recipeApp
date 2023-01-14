@@ -1,4 +1,9 @@
 import React, { useRef, useState } from "react";
+
+//iconify
+import { Icon } from "@iconify/react";
+
+// react router
 import { useNavigate } from "react-router-dom";
 
 const Search = () => {
@@ -9,22 +14,29 @@ const Search = () => {
     navigate(`/recipeApp/search/${inptref.current.value}`);
   };
   return (
-    <div className="flex flex-row justify-center align-center items-baseline mb-24">
-      <form onSubmit={handler} className="flex flex-row items-baseline">
-        <input
-          type="text"
-          ref={inptref}
-          className="p-2 w-32 h-8 bg-bright-blue text-white border-none outline-none rounded-2xl"
-        ></input>
-
-        <button
-          className={
-            "bg-bright-blue w-24 h-8 m-4 m-4 text-white rounded-2xl hover:bg-medium-blue"
-          }
-        >
-          submit
-        </button>
-      </form>
+    <div className="text-center w-full flex justify-center align-center text-white flex-col h-screen">
+      <h1 className="text-[40px] font-bold">
+        Find Best Recipes for your desired food
+      </h1>
+      <div className="flex justify-center items-center mt-5">
+        <div className="p-6 flex justify-center items-center gap-4 bg-white text-black w-[300px] h-[30px]">
+          <form onSubmit={handler}>
+            <input
+              type="text"
+              ref={inptref}
+              className="border-none border-[0px] outline-none font-serif text-[20px]"
+            ></input>
+          </form>
+          <Icon
+            icon="ic:baseline-search"
+            style={{
+              fontSize: "40px",
+              cursor: "pointer",
+              color: "black",
+            }}
+          />
+        </div>
+      </div>
     </div>
   );
 };

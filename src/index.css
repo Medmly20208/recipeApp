@@ -10,6 +10,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/food.jpg");
+  background-size: cover;
+  background-position: 10% 10%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 code {
