@@ -20,7 +20,7 @@ const Search = () => {
       </h1>
       <div className="flex justify-center items-center mt-5">
         <div className="p-6 flex justify-center items-center gap-4 bg-white text-black w-[300px] h-[30px]">
-          <form onSubmit={handler}>
+          <form >
             <input
               type="text"
               ref={inptref}
@@ -28,6 +28,7 @@ const Search = () => {
             ></input>
           </form>
           <Icon
+            onClick={handler}
             icon="ic:baseline-search"
             style={{
               fontSize: "40px",

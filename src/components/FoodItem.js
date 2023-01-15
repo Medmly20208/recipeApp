@@ -19,12 +19,13 @@ const FoodItem = (props) => {
     <div
       style={{
         backgroundImage: `url('${props.image}')`,
+        zIndex: 10,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
       onMouseEnter={() => setdisptitle(true)}
       onMouseLeave={() => setdisptitle(false)}
-      className="overflow-hidden p-4 bg-cover rounded-2xl w-48 h-48 text-center cursor-pointer transition-all duration-300 flex flex-col justify-center alig-center "
+      className=" overflow-hidden p-4 bg-cover rounded-2xl w-48 h-48 text-center cursor-pointer transition-all duration-300 flex flex-col justify-center alig-center "
       onClick={handler}
     >
       {disptitle == true ? (
