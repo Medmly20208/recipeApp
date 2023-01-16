@@ -45,23 +45,29 @@ const FoodDetails = () => {
           visible={true}
         />
       ) : (
-        <div className="min-h-[500px] p-8 rounded-2xl bg-white flex flex-col align-center gap-8  justify-center items-center opacity-90">
+        <div className="min-h-[500px] p-8  rounded-2xl bg-white flex flex-col align-center gap-8  justify-center items-center">
           <div className="flex flex-row justify-center">
-            <button className={customStyle} onClick={ingredientsHandler}>
+            <button
+              className={`${customStyle} ${!dipssummary ? " opacity-80" : ""}`}
+              onClick={ingredientsHandler}
+            >
               Ingredients
             </button>
-            <button className={customStyle} onClick={summaryHandler}>
+            <button
+              className={`${customStyle} ${dipssummary ? " opacity-80" : ""}`}
+              onClick={summaryHandler}
+            >
               Summary
             </button>
           </div>
           <div className="flex flex-row flex-wrap gap-10 w-full h-full justify-around items-start">
-            <div>
+            <div className="w-[100%] sm:w-[40%]">
               <img
                 src={j.get("img")}
-                className="max-w-[300px] max-h-[300px] rounded-3xl border-1 border-black"
+                className=" max-h-[300px] rounded-3xl border-1 border-black"
               ></img>
             </div>
-            <div className="max-w-[400px] max-h-[300px] overflow-y-scroll ">
+            <div className="w-[100%] sm:w-[50%] max-h-[300px] overflow-y-scroll ">
               {dipssummary == true ? (
                 <Summary j={j}></Summary>
               ) : (

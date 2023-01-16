@@ -26,7 +26,7 @@ const SearchResults = () => {
       <h1 className="text-center text-[60px] font-serif text-white mb-12">
         Results
       </h1>
-      <div className="flex flex-row justify-center align-center flex-wrap gap-6">
+      <div className="flex flex-row justify-center align-center flex-wrap gap-6 mb-[40px]">
         {loading == true ? (
           <Bars
             height="80"
@@ -38,7 +38,7 @@ const SearchResults = () => {
             visible={true}
           />
         ) : result.length == 0 ? (
-          <p>No results</p>
+          <p className="text-white font-serif m-12 text-[60px]">No Recipes</p>
         ) : (
           result.map((element) => {
             return (

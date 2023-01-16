@@ -20,22 +20,24 @@ const Search = () => {
       </h1>
       <div className="flex justify-center items-center mt-5">
         <div className="p-6 flex justify-center items-center gap-4 bg-white text-black w-[300px] h-[30px]">
-          <form >
+          <div>
             <input
               type="text"
               ref={inptref}
               className="border-none border-[0px] outline-none font-serif text-[20px]"
             ></input>
-          </form>
-          <Icon
-            onClick={handler}
-            icon="ic:baseline-search"
-            style={{
-              fontSize: "40px",
-              cursor: "pointer",
-              color: "black",
-            }}
-          />
+          </div>
+          <div>
+            <Icon
+              onClick={handler}
+              icon="ic:baseline-search"
+              style={{
+                fontSize: "30px",
+                cursor: "pointer",
+                color: "black",
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>
