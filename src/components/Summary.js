@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import LoadingSpinner from "./LoadingSpinner";
+import { Bars } from "react-loader-spinner";
+
 const Summary = (props) => {
   const [isLoading, setisLoadingsummary] = useState(false);
   const [summary, setsummary] = useState();
@@ -21,7 +22,15 @@ const Summary = (props) => {
   return (
     <div>
       {isLoading == true ? (
-        <LoadingSpinner />
+        <Bars
+          height="80"
+          width="80"
+          color="black"
+          ariaLabel="bars-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+        />
       ) : (
         <React.Fragment>
           <div className="flex flex-row justify-center items-center align-center gap-8">

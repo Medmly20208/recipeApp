@@ -35,17 +35,19 @@ const FoodDetails = () => {
   return (
     <div className="w-full  p-4 ">
       {Loading == true ? (
-        <Bars
-          height="80"
-          width="80"
-          color="white"
-          ariaLabel="bars-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-        />
+        <div className="flex justify-center items-center w-full">
+          <Bars
+            height="80"
+            width="80"
+            color="white"
+            ariaLabel="bars-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+          />
+        </div>
       ) : (
-        <div className="min-h-[500px] p-8  rounded-2xl bg-white flex flex-col align-center gap-8  justify-center items-center">
+        <div className="min-h-[500px] p-8  rounded-2xl bg-gray-300 flex flex-col align-center gap-8  justify-center items-center">
           <div className="flex flex-row justify-center">
             <button
               className={`${customStyle} ${!dipssummary ? " opacity-80" : ""}`}

@@ -26,7 +26,7 @@ const SearchResults = () => {
       <h1 className="text-center text-[60px] font-serif text-white mb-12">
         Results
       </h1>
-      <div className="flex flex-row justify-center align-center flex-wrap gap-6 mb-[40px]">
+      <div className="flex flex-row justify-center align-center flex-wrap gap-6 mb-[40px] w-full">
         {loading == true ? (
           <Bars
             height="80"

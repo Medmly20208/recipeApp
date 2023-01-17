@@ -24,7 +24,7 @@ const Search = () => {
             <input
               type="text"
               ref={inptref}
-              className="border-none border-[0px] outline-none font-serif text-[20px]"
+              className=" border-none border-[0px] outline-none font-serif text-[20px] w-[220px]"
             ></input>
           </div>
           <div>

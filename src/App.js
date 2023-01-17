@@ -1,8 +1,5 @@
-import CuisinesWrapper from "./components/CuisinesWrapper";
 import "./App.css";
 import React from "react";
-import Main from "./components/Main";
-import { Link } from "react-router-dom";
 
 import Search from "./components/Search";
 import SearchResults from "./components/SearchResults";
