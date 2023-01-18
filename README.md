@@ -13,4 +13,4 @@
 
 # Live demo
 
-https://peppy-lolly-f52be0.netlify.app/
+https://medmly20208.github.io/recipeApp/
