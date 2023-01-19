@@ -16,7 +16,7 @@ const Search = () => {
   return (
     <div className="text-center w-full flex justify-center align-center text-white flex-col h-screen">
       <h1 className="text-[40px] font-bold">
-        Find Best Recipes for your desired food
+        search for Food that makes you happy.
       </h1>
       <div className="flex justify-center items-center mt-5">
         <div className="p-6 flex justify-center items-center gap-4 bg-white text-black w-[300px] h-[30px]">
