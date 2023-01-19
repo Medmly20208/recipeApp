@@ -9,7 +9,7 @@
 
 # Built with 
 
- ### built with react and tailwindcss
+ ### built with react and tailwindcss and [sponacular API](https://spoonacular.com/food-api)
 
 # Live demo
 
